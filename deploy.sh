@@ -1,4 +1,4 @@
-docker build -t uryadovalex/multi-client:latest -t uryadovalex/multi-client:latest:$SHA -f ./client/Dockerfile ./client
+docker build -t uryadovalex/multi-client:latest -t uryadovalex/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t uryadovalex/multi-server:latest -t uryadovalex/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t uryadovalex/multi-worker:latest -t uryadovalex/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
